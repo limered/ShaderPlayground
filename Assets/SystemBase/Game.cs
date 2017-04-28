@@ -2,6 +2,7 @@
 using Assets.Utils;
 using System;
 using System.Collections.Generic;
+using Assets.Systems.Shader;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -37,7 +38,7 @@ namespace Assets.SystemBase
 
             #region System Registration
 
-            RegisterSystem(new FunnyMovementSystem()); // 10
+            RegisterSystem(new ShaderSystem());
 
             #endregion System Registration
 
